@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+haha
+<script>
+function Car(a , b){
+    this.name = a;
+    this.color = b;
+}
+Car.prototype.move = function(){
+    console.log(this.name + "차이고 "+ this.color + "색입니다." );
+}
+
+var a = new Car( "현대" , "노란"  )
+a.move()
+var b = new Car( "기아" , "노란"  )
+b.move()
+
+var a = [1,2,3,4,10];
+Array.prototype.print = function(){
+    for(var i=0 ; i<this.length ; i++ ){
+        console.log(i);
+    }
+}
+a.print();
+
+
+
+
+
+</script>    
+</body>
+</html>
