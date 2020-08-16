@@ -7,23 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-haha
+    하하
 <script>
-var a = {
-    'a' : 110,
-    'b' : 'hello',
-    'c' : function(){
-        this.a++;
+function hello(){
+    var a = 10;
+    return function(){
+        a++
+        console.log(a);
     }
 }
-Object.prototype.sum = function(){
-    console.log(this.a + 20 );
-}
-a.c();
-a.c();
-console.log(a.a);
-
-
+var test = new hello();
+test();
+test();
 </script>
+    
 </body>
 </html>

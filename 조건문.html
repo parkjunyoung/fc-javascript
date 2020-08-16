@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+조건문
+<script>
+// var a = 40;
+// if( a < 10  ){
+//     console.log('10보다 작습니다.')
+// }else{
+//     console.log('10보다 큽니다.')
+// }
+
+switch( 1 ){
+    case 1 :
+        console.log('1입니다.');
+        break;
+
+    case 2 :
+        console.log('2입니다.');
+        break;
+
+    default :
+        console.log('모든 벗어나는 조건.');
+
+}
+
+function myNum( num ){
+
+    if(num < 10){
+        return "10보다 작습니다."
+    }else{
+        return "10보다 큽니다."
+    }
+
+}
+
+var test = myNum(15);
+console.log(test);
+
+</script>
+</body>
+</html>

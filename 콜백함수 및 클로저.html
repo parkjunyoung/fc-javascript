@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+haha
+<script>
+
+// function test( num , callback ){
+//     callback();
+//     console.log(num);
+// }
+
+// test( 1, function(){
+//     console.log('콜백함수가 실행됩니다.')
+// } )
+
+function ex_cl(){
+    var num = 0;
+    return function(){
+        num++;
+        console.log(num);
+    }
+}
+
+var test = ex_cl();
+test();
+test();
+
+
+
+
+</script>
+</body>
+</html>
