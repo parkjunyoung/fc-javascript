@@ -8,20 +8,19 @@
 </head>
 <body>
 
-<div id="abc">
-    클릭하면 색상이 바뀝니다.
-</div>
-
+숫자 : 
+<div id="num"></div>
+<button id="plus">증가</button>
 
 <script>
-var a = 1;
+var num = 1;
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#abc').innerHTML = a;
+    document.querySelector('#num').innerHTML = num;
 })
 
-document.querySelector('#abc').addEventListener('click',function(){
-    a++;
-    document.querySelector('#abc').innerHTML = a;
+document.querySelector('#plus').addEventListener( 'click', function(){
+    num++;
+    document.querySelector('#num').innerHTML = num;
 });
 </script>    
 </body>
