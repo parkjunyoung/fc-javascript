@@ -18,13 +18,16 @@ const cities = [
     { name : 'busan', count : 20  },
 ]
 
+// map
 console.log(numbers.map( x => x * 10 ))
 console.log(cities.map( x => x.count * 10 ))
 
+
+// filter
 console.log ( numbers.filter(x => x < 10 ) );
 console.log( cities.filter( x => x.count < 10 ) );
 
-
+// sort
 console.log ( numbers.sort( ( x , y ) => {
     console.log(`x는 ${x}`)
     console.log(`y는 ${y}`)
@@ -39,6 +42,7 @@ console.log ( numbers.sort( ( x , y ) => {
 console.log( cities.sort( ( x , y ) => x.count - y.count ) )
 
 
+// reduce
 console.log( numbers.reduce( (acc , current) => acc +  current ) )
 console.log( 
         cities.reduce( ( acc , current ) => ({
