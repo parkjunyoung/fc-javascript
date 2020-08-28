@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+hahaha
+<script>
+
+const numbers = [1,2,3,5,4];
+
+const cities = [
+    { name : 'daegu', count : 2  },
+    { name : 'seoul', count : 1  },
+    { name : 'busan', count : 20  },
+]
+
+console.log(numbers.map( x => x * 10 ))
+console.log(cities.map( x => x.count * 10 ))
+
+console.log ( numbers.filter(x => x < 10 ) );
+console.log( cities.filter( x => x.count < 10 ) );
+
+
+console.log ( numbers.sort( ( x , y ) => {
+    console.log(`x는 ${x}`)
+    console.log(`y는 ${y}`)
+    console.log(`-------------------`)
+    if(x>y){
+        return 1
+    }else{
+        return -1
+    }
+}));
+
+console.log( cities.sort( ( x , y ) => x.count - y.count ) )
+
+
+console.log( numbers.reduce( (acc , current) => acc +  current ) )
+console.log( 
+        cities.reduce( ( acc , current ) => ({
+            count : acc.count + current.count
+        })
+    )
+)
+
+
+</script>    
+</body>
+</html>
